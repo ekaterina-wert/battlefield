@@ -1,0 +1,18 @@
+.field__player-name {
+    margin: 40px auto 12px;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.field__grid {
+  margin: 0 auto;
+  width: 409px;
+  height: 409px;
+  display: grid;
+  grid-template-columns: repeat(10, 40px);
+  grid-template-rows: repeat(10, 40px);
+  justify-content: center;
+  align-content: center;
+  /* gap: 1px; */
+  box-sizing: border-box;
+}

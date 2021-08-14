@@ -1,0 +1,16 @@
+.cell {
+    border: 1px solid rgb(218, 218, 218);
+    text-align: center;
+    font-size: 24px;
+    line-height: 38px;
+    cursor: pointer;
+    transition: background-color .5s ease;
+}
+
+.cell:hover {
+    background-color: rgb(218, 218, 218);
+}
+
+.cell_inactive {
+    pointer-events: none;
+}

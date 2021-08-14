@@ -1,0 +1,16 @@
+.main__title-container {
+margin: 30px auto 0;
+}
+
+.main__ascii-art {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    margin: 0;
+}
+
+.main__fields-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
