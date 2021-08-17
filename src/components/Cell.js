@@ -3,14 +3,14 @@ import './Cell.css';
 
 function Cell(props) {
 
-    const [value, setValue] = React.useState('');
+    const [value, setValue] = React.useState(props.isComputer ? '' : (props.shipId ? '@' : ''));
 
     function handleOnClick() {
-        props.onClick(props)
+  
 
         if (props.shipId) { setValue('X'); }
         else { setValue('.'); }
-        return 
+        props.onClick(props)
     }
 
 

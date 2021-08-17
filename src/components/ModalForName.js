@@ -1,6 +1,7 @@
 import React from 'react';
+import './ModalForName.css';
 
-function PopupName(props) {
+function ModalForName(props) {
     const [name, setName] = React.useState('');
 
     function handleChangeName(e) {
@@ -12,34 +13,35 @@ function PopupName(props) {
 
         // Передаём значения управляемых компонентов во внешний обработчик
         props.onNameSubmit(name);
+
     }
 
     return (
-        <div className={`popup ${props.isOpen && 'popup_opened'}`}>
-            <div className="popup__container">
-                <h2 className="popup__title">Enter your name</h2>
+        <div className={`modal ${props.isOpen && 'modal_opened'}`}>
+            <div className="modal__container">
+                <button className="modal__close-button" type="button" aria-label="Close" onClick={props.onClose}>X</button>
+                <h2 className="modal__title">Enter your name</h2>
                 <form
                     onSubmit={handleSubmit}
-                    className='popup__form'
+                    className='modal__form'
                     noValidate
                 >
-                    <fieldset className="popup__input-container">
+                    <fieldset className="modal__input-container">
                         <input
                             type="text"
-                            className="popup__text"
+                            className="modal__text"
                             value={name}
-                            minLength="2"
-                            maxLength="30"
                             onChange={handleChangeName}
+                            autoFocus
                             required
                         />
                     </fieldset>
-                    <button className="popup__submit" type="submit">Ok</button>
+                    <button className="modal__submit" type="submit">Ok</button>
                 </form>
             </div>
-            <button className="popup__close-button" type="button" aria-label="Close" onClick={props.onClose} />
+
         </div>
     )
 }
 
-export default PopupName;
+export default ModalForName;

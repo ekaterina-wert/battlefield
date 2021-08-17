@@ -1,7 +1,7 @@
 .field__player-name {
-    margin: 40px auto 12px;
-    font-weight: 500;
-    font-size: 24px;
+  margin: 40px auto 12px;
+  font-weight: 500;
+  font-size: 24px;
 }
 
 .field__grid {
@@ -13,6 +13,21 @@
   grid-template-rows: repeat(10, 40px);
   justify-content: center;
   align-content: center;
-  /* gap: 1px; */
   box-sizing: border-box;
+  border: silver solid 3px;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 40%);
+  transition: box-shadow 1s ease, border .6s ease;
+}
+
+.field__grid_inactive {
+  border: white;
+  box-shadow: none;
+  pointer-events: none;
+}
+
+.field__reply {
+  text-transform: uppercase;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 600;
 }
