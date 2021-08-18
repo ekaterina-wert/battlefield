@@ -19,6 +19,10 @@
   transition: box-shadow 1s ease, border .6s ease;
 }
 
+.field__grid_player_computer {
+  pointer-events: none;
+}
+
 .field__grid_inactive {
   border: white;
   box-shadow: none;

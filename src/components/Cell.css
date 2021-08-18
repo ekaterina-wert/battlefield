@@ -1,3 +1,21 @@
+@keyframes white-pulse{
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: rgb(189, 148, 148);
+    }
+}
+
+@keyframes grey-pulse{
+    from {
+        background-color: rgb(218, 218, 218);
+    }
+    to {
+        background-color: rgb(189, 148, 148);
+    }
+}
+
 .cell {
     border: 1px solid rgb(218, 218, 218);
     text-align: center;
@@ -9,6 +27,14 @@
 
 .cell:hover {
     background-color: rgb(218, 218, 218);
+}
+
+.cell_shot {
+    animation: grey-pulse 1.3s ease-out reverse forwards;
+}
+
+.cell_computer-shot {
+    animation: white-pulse 2s ease-out reverse;
 }
 
 .cell_inactive {

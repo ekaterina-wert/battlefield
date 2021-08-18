@@ -1,5 +1,5 @@
 import React from 'react';
-import './ModalGameOver.css';
+import './Modals.css';
 
 function ModalGameOver(props) {
     return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import './ModalForName.css';
+import './Modals.css';
 
 function ModalForName(props) {
     const [name, setName] = React.useState('');

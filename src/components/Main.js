@@ -13,13 +13,34 @@ function Main(props) {
         human: false
     });
 
+    const [computerShot, setComputerShot] = React.useState(0)
+
+
+    function computerMove() {
+       
+        setComputerShot(Math.floor(Math.random() * 100));
+
+        setTimeout(() => {
+             setActivePlayer({
+            computer: true,
+            human: false
+        });
+        }, 2000)
+
+        console.log(computerShot);
+    }
+
+
     const [gameOver, setGameOver] = React.useState(false)
 
     function handleOnClick(data) {
         data.isMissed && setActivePlayer({
-            computer: !activePlayer.computer,
-            human: !activePlayer.human
-        })
+            computer: false,
+            human: true
+            // computer: !activePlayer.computer,
+            // human: !activePlayer.human
+        });
+        data.isMissed && setTimeout(computerMove, 800);
         data.gameOver && setGameOver(data.gameOver);
     }
 
@@ -52,6 +73,7 @@ function Main(props) {
                     player={props.playerName}
                     field={HumanField}
                     isActivePlayer={activePlayer.human}
+                    firedCell={computerShot}
                 />
             </div>
             <ModalGameOver
