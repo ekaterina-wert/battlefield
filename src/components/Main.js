@@ -5,18 +5,20 @@ import ModalGameOver from './ModalGameOver';
 import { renderField } from '../utils/fields';
 
 function Main(props) {
-    let ComputerField = renderField();
-    let HumanField = renderField();
-
     const [activePlayer, setActivePlayer] = React.useState({
         computer: true,
         human: false
     });
 
+    const [computerField, setComputerField] = React.useState(renderField());
+    const [humanField, setHumanField] = React.useState(renderField());
+
+
+
     const [computerShot, setComputerShot] = React.useState(null);
 
     const [gameOver, setGameOver] = React.useState(false);
-    const [winner, setWinner] = React.useState('')
+    const [restart, setRestart] = React.useState(true)
 
     function getArray() {
         const array = [];
@@ -50,28 +52,28 @@ function Main(props) {
             });
         }, 2000)
 
-        console.log(computerShot);
+        console.log(activePlayer);
     }
 
     function computerSimpleLogic() {
         if (computerShot % 10 < 9 && shotsArray.includes(computerShot + 1)) {
             setTimeout(() => setComputerShot(computerShot + 1), 1000);
-            let newArr = shotsArray.splice(shotsArray.indexOf(computerShot + 1), 1)
+            shotsArray.splice(shotsArray.indexOf(computerShot + 1), 1)
             setShotsArray(shotsArray)
             console.log(shotsArray)
         } else if (computerShot % 10 !== 0 && shotsArray.includes(computerShot - 1)) {
             setTimeout(() => setComputerShot(computerShot - 1), 1000);
-            let newArr = shotsArray.splice(shotsArray.indexOf(computerShot - 1), 1)
+            shotsArray.splice(shotsArray.indexOf(computerShot - 1), 1)
             setShotsArray(shotsArray)
             console.log(shotsArray)
         } else if (computerShot / 10 > 1 && shotsArray.includes(computerShot - 10)) {
             setTimeout(() => setComputerShot(computerShot - 10), 1000);
-            let newArr = shotsArray.splice(shotsArray.indexOf(computerShot - 10), 1)
+            shotsArray.splice(shotsArray.indexOf(computerShot - 10), 1)
             setShotsArray(shotsArray)
             console.log(shotsArray)
         } else if (computerShot / 10 < 9 && shotsArray.includes(computerShot + 10)) {
             setTimeout(() => setComputerShot(computerShot + 10), 1000);
-            let newArr = shotsArray.splice(shotsArray.indexOf(computerShot + 10), 1)
+            shotsArray.splice(shotsArray.indexOf(computerShot + 10), 1)
             setShotsArray(shotsArray)
             console.log(shotsArray)
         }
@@ -88,18 +90,18 @@ function Main(props) {
             });
             data.isMissed && setTimeout(computerMove, 800);
             if (data.gameOver) {
-                console.log(data.winner)
-                setGameOver(data.gameOver);
-                setWinner(data.winner);
-                console.log(winner)
+                setGameOver(true);
+                setRestart(false);
             }
         }
+        console.log(activePlayer);
     }
 
     function handleOnRestart() {
         setGameOver(false);
-        ComputerField = renderField();
-        HumanField = renderField();
+        setRestart(true);
+        setComputerField(renderField());
+        setHumanField(renderField());
     }
 
     return (
@@ -114,29 +116,27 @@ function Main(props) {
                 <span className='main__ascii-art'>#########  ###     ###     ###         ###     ########## ##########  ########  ###    ### ########### ###        </span>
             </div>
             <div className='main__fields-container'>
-                <BattleField
+                {restart && <BattleField
                     onClick={handleOnClick}
                     player='computer'
-                    field={ComputerField}
+                    field={computerField}
                     isActivePlayer={activePlayer.computer}
                     isMissed={null}
-                />
-                <BattleField
+                />}
+                {restart && <BattleField
                     onClick={handleOnClick}
                     player={props.playerName}
-                    field={HumanField}
+                    field={humanField}
                     isActivePlayer={activePlayer.human}
                     firedCell={computerShot}
                     isMissed={null}
-                />
+                />}
             </div>
             <ModalGameOver
                 isOpen={gameOver}
-                isWinner={winner}
+                isWinner={activePlayer.computer ? props.playerName : false}
                 onRestart={handleOnRestart}
-                playerName={props.playerName}
             />
-
 
         </div>
     );

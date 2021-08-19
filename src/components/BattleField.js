@@ -6,7 +6,7 @@ function BattleField(props) {
     const field = props.field;
 
     const [reply, setReply] = React.useState('^(;,;)^');
-    const [ships, setShips] = React.useState(field.flat().filter(el => el !== 0));
+    const [ships, setShips] = React.useState(field && field.flat().filter(el => el !== 0));
 
     React.useEffect(() => {
         if (props.firedCell) {
@@ -15,6 +15,7 @@ function BattleField(props) {
     }, [props.firedCell])
 
     function renderComputerMoveReply(place) {
+
         const shot = field.flat()[place]
         if (shot === 0) {
             setReply('not today!');
@@ -24,7 +25,7 @@ function BattleField(props) {
         else {
             ships.splice(ships.indexOf(shot), 1)
             setShips(ships)
-            console.log(props.player, ships)
+
             if (ships.indexOf(shot) !== -1) {
                 setReply('yet not dead!')
                 props.onClick({ ...props, hurt: true });
@@ -33,7 +34,7 @@ function BattleField(props) {
                 setReply('killed!');
 
                 if (ships.length === 0) {
-                    props.onClick({ ...props, gameOver: true, winner: 'computer' });
+                    props.onClick({ ...props, gameOver: true });
                 }
                 props.onClick({ ...props, isMissed: true });
             }
@@ -59,7 +60,7 @@ function BattleField(props) {
                 setReply('killed!');
 
                 if (ships.length === 0) {
-                    props.onClick({ ...props, gameOver: true, winner: props.player });
+                    props.onClick({ ...props, gameOver: true });
                 }
                 props.onClick({ ...props, isMissed: false });
             }
@@ -68,7 +69,6 @@ function BattleField(props) {
 
     function handleOnClick(place) {
         renderReply(place);
-
     };
 
     function getClassName() {
@@ -89,7 +89,6 @@ function BattleField(props) {
                     return row.map((cell, x) =>
                         <Cell
                             key={`${y}${x}`}
-                            // id={`${y}${x}`}
                             x={x}
                             y={y}
                             onClick={handleOnClick}
