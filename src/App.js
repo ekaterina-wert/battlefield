@@ -4,8 +4,8 @@ import Main from './components/Main';
 import ModalForName from './components/ModalForName';
 
 function App() {
-  const [showModal, setShowModal] = React.useState(true);
-  const [playerName, setPlayerName] = React.useState('noname')
+  const [showModal, setShowModal] = React.useState(true); // стейт для закрытия,открытия модального окна
+  const [playerName, setPlayerName] = React.useState('noname'); // стейт для хранения имени игрока
 
   function handleSubmitName(playerName) {
     playerName && setPlayerName(playerName);
@@ -15,7 +15,6 @@ function App() {
   function handlePopupClose() {
     setShowModal(false);
   }
-
 
   return (
     <div className="App">
