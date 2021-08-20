@@ -1,3 +1,8 @@
+.main {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
 .main__title-container {
 margin: 30px auto 0;
 }
@@ -13,4 +18,30 @@ margin: 30px auto 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+@media screen and (max-width: 910px) {
+    .main {
+        max-width: 800px;
+    }
+
+    .main__ascii-art {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .main {
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 555px) {
+    .main__ascii-art {
+        font-size: 4px;
+    }
+
+    .main__fields-container {
+        flex-direction: column;
+    }
 }

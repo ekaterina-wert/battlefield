@@ -35,3 +35,31 @@
   font-size: 20px;
   font-weight: 600;
 }
+
+@media screen and (max-width: 910px) {
+  .field__grid {
+    width: 309px;
+    height: 309px;
+    grid-template-columns: repeat(10, 30px);
+    grid-template-rows: repeat(10, 30px);
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .field__grid {
+    width: 209px;
+    height: 209px;
+    grid-template-columns: repeat(10, 20px);
+    grid-template-rows: repeat(10, 20px);
+  }
+}
+
+@media screen and (max-width: 555px) {
+  .field__player-name {
+    font-size: 18px;
+  }
+
+  .field__reply {
+    font-size: 16px;
+  }
+}

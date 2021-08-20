@@ -40,3 +40,24 @@
 .cell_inactive {
     pointer-events: none;
 }
+
+@media screen and (max-width: 910px) {
+    .cell {
+        font-size: 20px;
+        line-height: 25px;
+    }
+  }
+  
+  @media screen and (max-width: 730px) {
+    .cell {
+        font-size: 15px;
+        line-height: 18px;
+    }
+  }
+  
+  @media screen and (max-width: 555px) {
+    .cell {
+        font-size: 13px;
+        line-height: 16px;
+    }
+  }
