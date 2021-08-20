@@ -1,6 +1,6 @@
 ## Battleship 
 
-[Play here](https://)
+[Play here](https://ekaterina-wert.github.io/battleship/index)
 
 #### Rules
 
