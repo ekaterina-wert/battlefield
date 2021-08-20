@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ekaterina-wert/battleship/static/css/main.141fd8d3.chunk.css",
+    "main.js": "/ekaterina-wert/battleship/static/js/main.570b33e6.chunk.js",
+    "main.js.map": "/ekaterina-wert/battleship/static/js/main.570b33e6.chunk.js.map",
+    "runtime-main.js": "/ekaterina-wert/battleship/static/js/runtime-main.e5940c83.js",
+    "runtime-main.js.map": "/ekaterina-wert/battleship/static/js/runtime-main.e5940c83.js.map",
+    "static/js/2.11c40fe0.chunk.js": "/ekaterina-wert/battleship/static/js/2.11c40fe0.chunk.js",
+    "static/js/2.11c40fe0.chunk.js.map": "/ekaterina-wert/battleship/static/js/2.11c40fe0.chunk.js.map",
+    "static/js/3.481791b8.chunk.js": "/ekaterina-wert/battleship/static/js/3.481791b8.chunk.js",
+    "static/js/3.481791b8.chunk.js.map": "/ekaterina-wert/battleship/static/js/3.481791b8.chunk.js.map",
+    "index.html": "/ekaterina-wert/battleship/index.html",
+    "static/css/main.141fd8d3.chunk.css.map": "/ekaterina-wert/battleship/static/css/main.141fd8d3.chunk.css.map",
+    "static/js/2.11c40fe0.chunk.js.LICENSE.txt": "/ekaterina-wert/battleship/static/js/2.11c40fe0.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/ekaterina-wert/battleship/static/media/ibm-plex-sans-extralight.f688400c.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e5940c83.js",
+    "static/js/2.11c40fe0.chunk.js",
+    "static/css/main.141fd8d3.chunk.css",
+    "static/js/main.570b33e6.chunk.js"
+  ]
+}
