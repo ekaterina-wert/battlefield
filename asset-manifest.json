@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/ekaterina-wert/battleship/static/css/main.141fd8d3.chunk.css",
-    "main.js": "/ekaterina-wert/battleship/static/js/main.570b33e6.chunk.js",
-    "main.js.map": "/ekaterina-wert/battleship/static/js/main.570b33e6.chunk.js.map",
-    "runtime-main.js": "/ekaterina-wert/battleship/static/js/runtime-main.e5940c83.js",
-    "runtime-main.js.map": "/ekaterina-wert/battleship/static/js/runtime-main.e5940c83.js.map",
-    "static/js/2.11c40fe0.chunk.js": "/ekaterina-wert/battleship/static/js/2.11c40fe0.chunk.js",
-    "static/js/2.11c40fe0.chunk.js.map": "/ekaterina-wert/battleship/static/js/2.11c40fe0.chunk.js.map",
-    "static/js/3.481791b8.chunk.js": "/ekaterina-wert/battleship/static/js/3.481791b8.chunk.js",
-    "static/js/3.481791b8.chunk.js.map": "/ekaterina-wert/battleship/static/js/3.481791b8.chunk.js.map",
-    "index.html": "/ekaterina-wert/battleship/index.html",
-    "static/css/main.141fd8d3.chunk.css.map": "/ekaterina-wert/battleship/static/css/main.141fd8d3.chunk.css.map",
-    "static/js/2.11c40fe0.chunk.js.LICENSE.txt": "/ekaterina-wert/battleship/static/js/2.11c40fe0.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/ekaterina-wert/battleship/static/media/ibm-plex-sans-extralight.f688400c.woff2"
+    "main.css": "/battleship/static/css/main.ffbd9137.chunk.css",
+    "main.js": "/battleship/static/js/main.570b33e6.chunk.js",
+    "main.js.map": "/battleship/static/js/main.570b33e6.chunk.js.map",
+    "runtime-main.js": "/battleship/static/js/runtime-main.4daccb4b.js",
+    "runtime-main.js.map": "/battleship/static/js/runtime-main.4daccb4b.js.map",
+    "static/js/2.11c40fe0.chunk.js": "/battleship/static/js/2.11c40fe0.chunk.js",
+    "static/js/2.11c40fe0.chunk.js.map": "/battleship/static/js/2.11c40fe0.chunk.js.map",
+    "static/js/3.481791b8.chunk.js": "/battleship/static/js/3.481791b8.chunk.js",
+    "static/js/3.481791b8.chunk.js.map": "/battleship/static/js/3.481791b8.chunk.js.map",
+    "index.html": "/battleship/index.html",
+    "static/css/main.ffbd9137.chunk.css.map": "/battleship/static/css/main.ffbd9137.chunk.css.map",
+    "static/js/2.11c40fe0.chunk.js.LICENSE.txt": "/battleship/static/js/2.11c40fe0.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/battleship/static/media/ibm-plex-sans-extralight.f688400c.woff2"
   },
   "entrypoints": [
-    "static/js/runtime-main.e5940c83.js",
+    "static/js/runtime-main.4daccb4b.js",
     "static/js/2.11c40fe0.chunk.js",
-    "static/css/main.141fd8d3.chunk.css",
+    "static/css/main.ffbd9137.chunk.css",
     "static/js/main.570b33e6.chunk.js"
   ]
 }
