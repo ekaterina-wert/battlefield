@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/battleship/static/css/main.58d12c4e.chunk.css",
+    "main.css": "/battleship/static/css/main.3a6b50ee.chunk.css",
     "main.js": "/battleship/static/js/main.570b33e6.chunk.js",
     "main.js.map": "/battleship/static/js/main.570b33e6.chunk.js.map",
     "runtime-main.js": "/battleship/static/js/runtime-main.4daccb4b.js",
@@ -10,14 +10,14 @@
     "static/js/3.481791b8.chunk.js": "/battleship/static/js/3.481791b8.chunk.js",
     "static/js/3.481791b8.chunk.js.map": "/battleship/static/js/3.481791b8.chunk.js.map",
     "index.html": "/battleship/index.html",
-    "static/css/main.58d12c4e.chunk.css.map": "/battleship/static/css/main.58d12c4e.chunk.css.map",
+    "static/css/main.3a6b50ee.chunk.css.map": "/battleship/static/css/main.3a6b50ee.chunk.css.map",
     "static/js/2.11c40fe0.chunk.js.LICENSE.txt": "/battleship/static/js/2.11c40fe0.chunk.js.LICENSE.txt",
     "static/media/index.css": "/battleship/static/media/ibm-plex-sans-extralight.f688400c.woff2"
   },
   "entrypoints": [
     "static/js/runtime-main.4daccb4b.js",
     "static/js/2.11c40fe0.chunk.js",
-    "static/css/main.58d12c4e.chunk.css",
+    "static/css/main.3a6b50ee.chunk.css",
     "static/js/main.570b33e6.chunk.js"
   ]
 }
