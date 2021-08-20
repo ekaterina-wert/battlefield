@@ -55,14 +55,14 @@
 
 @media screen and (max-width: 730px) {
   .field__grid {
-    width: 209px;
-    height: 209px;
-    grid-template-columns: repeat(10, 20px);
-    grid-template-rows: repeat(10, 20px);
+    width: 269px;
+    height: 269px;
+    grid-template-columns: repeat(10, 26px);
+    grid-template-rows: repeat(10, 26px);
   }
 
   .field__player-name {
-    max-width: 209px;
+    max-width: 269px;
   }
 }
 
