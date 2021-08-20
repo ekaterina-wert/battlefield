@@ -2,6 +2,10 @@
   margin: 40px auto 12px;
   font-weight: 500;
   font-size: 24px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 409px;
 }
 
 .field__grid {
@@ -16,7 +20,7 @@
   box-sizing: border-box;
   border: silver solid 3px;
   box-shadow: 0px 0px 15px rgb(0 0 0 / 40%);
-  transition: box-shadow 1s ease, border .6s ease;
+  transition: box-shadow 1s ease, border 0.6s ease;
 }
 
 .field__grid_player_computer {
@@ -43,6 +47,10 @@
     grid-template-columns: repeat(10, 30px);
     grid-template-rows: repeat(10, 30px);
   }
+
+  .field__player-name {
+    max-width: 309px;
+  }
 }
 
 @media screen and (max-width: 730px) {
@@ -51,6 +59,10 @@
     height: 209px;
     grid-template-columns: repeat(10, 20px);
     grid-template-rows: repeat(10, 20px);
+  }
+
+  .field__player-name {
+    max-width: 209px;
   }
 }
 

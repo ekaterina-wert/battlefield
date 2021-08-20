@@ -86,26 +86,26 @@
 }
 
 .modal__text:focus {
-    outline: none;
+  outline: none;
 }
 
 .modal__submit {
-    margin: 20px;
-    padding: 0;
-    outline: none;
-    box-sizing: border-box;
-    border: solid 1px #000;
-    min-height: 30px;
-    min-width: 50px;
-    background: #fff;
-    cursor: pointer;
-    transition: background-color .4s ease;
-    font-size: 20px;
-    text-transform: uppercase;
+  margin: 20px;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  border: solid 1px #000;
+  min-height: 30px;
+  min-width: 50px;
+  background: #fff;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 
 .modal__submit:hover {
-    background-color: rgb(218, 218, 218);
+  background-color: rgb(218, 218, 218);
 }
 
 .modal__final-title {
@@ -140,4 +140,19 @@
 
 .modal__restart-button:hover {
   background-color: rgb(218, 218, 218);
+}
+
+@media screen and (max-width: 555px) {
+  .modal__container {
+    min-width: 300px;
+    margin-top: 134px;
+  }
+
+  .modal__input-container {
+    margin: 0 auto;
+  }
+
+  .modal__text {
+    font-size: 22px;
+  }
 }
